@@ -67,6 +67,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface NSObject (YYModel)
 
+// The two methods defined the same name in protocol below are just used for convenience;
+// now concrete models can auto complete the two methods.
++ (NSDictionary *)modelContainerPropertyGenericClass;;
++ (NSDictionary *)modelCustomPropertyMapper;
+
 /**
  Creates and returns a new instance of the receiver from a json.
  This method is thread-safe.
